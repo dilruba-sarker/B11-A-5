@@ -7,9 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-300 max-w-5xl mx-auto px-2 ">
     <navbar >
-        <div class="max-w-5xl bg-slate-300 mx-auto px-2 rounded-md flex justify-between" >
+        <div class="max-w-5xl bg-slate-100 mx-auto px-2 rounded-md flex justify-between" >
             <div class="flex  items-center">
                 <img src="./assets/logo.png" alt="">
                 <h1 class="text-2xl ">Dev<span class="text-2xl font-bold">Board</span></h1>
@@ -24,16 +24,61 @@
         </div>
     </navbar>
 
-    <main>
-       
-<h1> - Question-1: What are the different ways to select an element in the DOM?</h1>
-<h1>- Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+    <main class="max-w-5xl bg-blue-100 mx-auto px-2">
+       <div class="bg-white rounded-lg p-2">
+        <h1 class="text-xl font-bold"> - Question-1: What are the different ways to select an element in the DOM?</h1>
+        <h1> - Answer: There are 5 ways. They are: Using getElementById.
+            <li>Using getElementsByClassName.</li>
+            <li>Using getElementsByTagName.</li>
+            <li>Using querySelector.</li>
+            <li>Using querySelectorAll</li>
+          
+           
+            </h1>
+    </div>
+ 
+       <div class="bg-white rounded-lg p-2 mt-4">
+        <h1 class="text-xl font-bold">- Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+        <h1> 
+           1. innerHtml returns all text, including html tags, that is contained by an element. <br>
+          2. innerText returns all text contained by an element and all its child elements. <br>
+          3.  textContents is all text contained by an element and all its children that are for formatting purposes only.
+           
+            </h1>
+    </div>
+       <div class="bg-white rounded-lg p-2 mt-4">
+        <h1 class="text-xl font-bold">- Question-3: What is event delegation in the DOM?</h1>
+        <h1> 
+            Capturing and bubbling allow us to implement one of the most powerful event handling patterns called event delegation.
+            </h1>
+    </div>
+       <div class="bg-white rounded-lg p-2 mt-4">
+        <h1 class="text-xl font-bold">-Question-4: What is event bubbling in the DOM?</h1>
+        <h1> 
+            Event bubbling is a behavior in JavaScript where an event that is triggered on a child element will also be triggered on its parent elements all the way up to the document object.
+            </h1>
+    </div>
+       <div class="bg-white rounded-lg p-2 mt-4">
+        <h1 class="text-xl font-bold"> Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+        <h1> 
+            How to create? <br>
+            document.createElement("newDiv") <br>
+            const addElement = document.getElementById("parent");<br>
+            addElement.appendChild(newDiv); <br>
+            const removeDiv = document.getElementById("new-div");<br>  
+            removeDiv.remove();
+            </h1>
+    </div>
+ 
 
-<h1>- Question-3: What is event delegation in the DOM?</h1>
 
-<h1>- Question-4: What is event bubbling in the DOM?</h1>
 
-<h1>- Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+<h1>- </h1>
+
+<h1>-</h1> 
+
+
+
     </main>
     <script>
         document.getElementById('blog').addEventListener("click",function(){
