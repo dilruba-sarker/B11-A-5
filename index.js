@@ -64,3 +64,7 @@ titleContainer.appendChild(newDiv)
 document.getElementById("clear").addEventListener('click',function(){
     document.getElementById("title-cointain").innerText=' '
 })
+
+document.getElementById('location').addEventListener('click',function(){
+    window.location.href = 'blog.html';
+})

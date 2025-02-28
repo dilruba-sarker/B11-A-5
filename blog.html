@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <navbar >
+        <div class="max-w-5xl bg-slate-300 mx-auto px-2 rounded-md flex justify-between" >
+            <div class="flex  items-center">
+                <img src="./assets/logo.png" alt="">
+                <h1 class="text-2xl ">Dev<span class="text-2xl font-bold">Board</span></h1>
+            </div>
+            <div class="flex items-center"> 
+
+                <button id="blog" class="flex bg-purple-200 py-1 rounded-xl px-1" type="button">
+                   Back To Task
+                    </button  >
+                
+            </div>
+        </div>
+    </navbar>
+
+    <main>
+       
+<h1> - Question-1: What are the different ways to select an element in the DOM?</h1>
+<h1>- Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+
+<h1>- Question-3: What is event delegation in the DOM?</h1>
+
+<h1>- Question-4: What is event bubbling in the DOM?</h1>
+
+<h1>- Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+    </main>
+    <script>
+        document.getElementById('blog').addEventListener("click",function(){
+            window.location.href = 'index.html';
+        })
+    </script>
+</body>
+</html>
