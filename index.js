@@ -25,4 +25,42 @@ const getYear=todayDate.getFullYear()
 
 const findDate = `${nameDay}, ${numberDay} ${nameMonth} ${getYear}`;
 document.getElementById("date").innerText=findDate
-console.log(findDate);
+// clikc
+const buttons=document.querySelectorAll(".click1")
+buttons.forEach(button=>button.addEventListener("click",function(){
+const increaseAmount=document.getElementById("increase").innerText
+const decreaseAmount=document.getElementById("decrease").innerText;
+
+const newIncreaseAmount = parseInt(increaseAmount) + 1;
+document.getElementById("increase").innerText = newIncreaseAmount;
+
+const newDecreaseAmount = parseInt(decreaseAmount) - 1;
+document.getElementById("decrease").innerText = newDecreaseAmount;
+alert("ok good!Board Updated Successfully!")
+if(newDecreaseAmount===0){
+    alert("all task completed")
+    
+}
+button.disabled = true;
+
+// append child
+
+
+const getCard=button.parentElement.parentElement.parentElement;
+    const cardTitle = getCard.querySelector(".card-title").innerText;
+    const time = new Date()
+    const getTime=time.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+   
+    const titleContainer = document.getElementById("title-cointain");
+    const newDiv = document.createElement("div");
+    
+    newDiv.innerHTML=`You have Completed The  task ${cardTitle} at ${getTime}`
+titleContainer.appendChild(newDiv)
+   
+
+
+}))
+
+document.getElementById("clear").addEventListener('click',function(){
+    document.getElementById("title-cointain").innerText=' '
+})
